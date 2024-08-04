@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>border</title>
+
+    <style>
+        /* for remove defalt margin *{} 
+        */
+        *{
+            margin: 0;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            margin: 100px ;
+            background-color: red;
+            border: 1px solid red;
+            
+            /* border 1px solid red */
+            /* 1px=> border-width */
+            /* solid => border color */
+            /* black => border-scolor */
+            border-width: 10px;
+            /* border-top-width: 5;
+            border-bottom-width: 15px; */
+
+            /* we can write mutiple line */
+            border-style:ridge;
+            /* we can aply style top buttom left right also */
+            /* border-top-style: solid;
+            border-bottom-style: dotted; */
+
+            border-color: black;
+            border-top-color: blue;
+            border-right-color: green;
+            border-left-color: yellow;
+            /* border redius means 4 corner redius */
+            /* border-radius: 20px; */ 
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            /* border redius 50% means rectengle convert to cercle */
+            /* border-radius: 50%; */
+
+            
+
+            /* for create circle circle  */
+
+
+            
+        }
+
+        .container1{
+            width: 300px;
+            height: 300px;
+            margin: 100px ;
+            background-color: aqua;
+            border: 10px solid red;
+            border-style: ridge;
+            border-radius: 50%;
+            border-top-color: blue;
+            border-bottom-color: black;
+            border-right-color: green;
+            border-left-color: palevioletred;
+            
+
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container"></div>
+    <div class="container1"></div>
+</body>
+</html>
