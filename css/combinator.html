@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+
+    <!-- type of Combinator
+    1. grouping Combinator
+    2. descendent Combinator
+    3. child combinatior
+    4. general sibling Combinator
+    5. adjacent sibling Combinator -->
+    <style>
+        /* grouping combinator below 
+        define header & paragraph(h1, p)*/
+        h1,p, .demo{
+            color: rebeccapurple;
+
+        }
+        /* . descendent Combinator (.container div) */
+        .container div{
+            background-color: rgb(43, 226, 83);
+
+        }
+        /* child combinatior(.child) */
+       
+      
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 3
+            <div class="grand-child">grand child 1</div>
+            <div class="grand-child">grand child 2</div>
+            <div class="grand-child">grand child 3</div>
+          
+        </div>
+    </div>
+
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt voluptatibus unde perspiciatis porro perferendis est, tenetur nihil a debitis mollitia praesentium corrupti ut blanditiis qui quia sunt labore possimus velit?</div>
+    </div>
+    <h1>heading</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, quia dolore. In corporis iure vel, eum tenetur suscipit libero fuga nesciunt reprehenderit nihil sint dolores ea nostrum aut quae ipsum!</p>
+    <div class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minus fugiat repellendus, consectetur quos sunt nesciunt. Soluta, animi fugiat ab odit ex, quidem deserunt consectetur, nobis provident dolorum quisquam fugit?</div>
+
+</body>
+</html>

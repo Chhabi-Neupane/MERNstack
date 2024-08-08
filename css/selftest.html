@@ -9,45 +9,186 @@
         *{
             margin: 0;
         }
+
+        .logbar,li:hover{
+        border-bottom: 1px solid black;
+        }
+
+
+
+
+        .logbar{
+         
+         font-style: bold;
+         font-family: sans-serif;
+         padding-left: 1238px;
+         color: rgb(217, 21, 194);
+         font-size: 12px;
+     }
+
+
         .nav{
-            width: 200;
-            height: 200;
+            width: 100%;
+            height:50px;
             background-color: #63b589;
-            margin: 25px;
-            padding: 10px;
+            /* margin: 25px; */
+            /* padding: 10px; */
             color: azure;
-            flex-direction: row-reverse;
+            /* flex-direction: row-reverse; */
             padding-left: 500px;
-            padding-top: 350;
             font-size: 20px;
             font-style: bold;
             font-family: sans-serif;
             font-display: inherit;
+
+        }
+
+
+        ul{
+            width: 40%;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            /* margin: 10px; */
+            cursor: pointer;
+        }
+           
+
+        li{
+            padding: 5px;
            
         }
-        .nav:hover{
-            width: auto;
-            height: inherit;
+        li:hover{
+            font-size: px;
             color: blue;
+            border-bottom: 1px solid black;
+
+        }
+       
+
+       
+        .main{
+            width: 100%;
+            height: 600px;
+            background-color: rgb(red, green, blue);
+            display: flex;
+            margin: 10px;
+        }
+        .left{
+            width: 25%;
+            height: 600px;
+            background-color: rgb(217, 171, 171);
+        }
+        .right{
+            width: 75%;
+            height: 600px;
+            background-color: violet;
+        }
+
+        .right-top{
+            width: 100%;
+            height: 300px;
+            background-color: rgb(245, 185, 225);
+        }
+        .right-bottom{
+            display: flex;
+            width: 100%;
+            height: 300px;
+
+        }
+        .right-bottom-left{
+            width: 25%;
+            height: 300px;
+            background-color: rgb(156, 255, 155);
+            
+        }
+
+        .right-bottom-right{
+            width:25%;
+            height: 300px;
+            background-color: bisque;
+        }
+
+            .left-small-corner{
+                width: 25%;
+                height: 300px;
+                background-color: blue;
+            }
+        
+        .small-corner-right{
+            width: 25%;
+            height: 300px;
+            background-color: blueviolet;
+        }
+        .footer{
+            display: flex;
+            width: 100%;
+            height:50px;
+            background-color: rgb(146, 112, 210);
+            margin: 15px;
+           color: rgb(255, 255, 255);
+      
+           justify-content: space-evenly;
+
+        
+       
         }
 
 
     </style>
 </head>
 <body>
+    <div class="logbar">
+        <ul>
+            <li>Login</li>
+            <li>Sign Up</li>
+
+        </ul>
+    </div>
 
     <div class="nav">
 
-       <span>Home</span>
-       <span>Servises</span>
-       <span>about</span>
-       <span>Blog</span>
-       <span>Contact</span>
+<ul>
+
+    <li>Home</li>
+    <li>Product</li>
+    <li>Services</li>
+    <li>blog</li>
+    <li>Contact</li>
+  
+   
+</ul>
 
 
     </div>
    
-        
+
+    <div class="main">
+        <div class="left">left division</div>
+        <div class="right">
+            <div class="right-top">right top
+                <img src="shes1.jpg" alt="" width="500px" height="250px"  >
+            </div>
+            <div class="right-bottom">
+                <div class="left-small-corner">lefts mall corner</div>
+                <div class="right-bottom-left">right bottom left division</div>
+                
+                <div class="right-bottom-right">right bottom right division
+                
+                    </div>
+                    <div class="small-corner-right"> small corner right</div>
+                </div>
+
+            </div>
+           
+
+        </div>
+
+
     </div>
+    <div class="footer">footer division</div>
+
+   
+  
 </body>
 </html>

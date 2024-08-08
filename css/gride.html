@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+
+
+    <style>
+        * {
+            margin: 0;
+        }
+        
+
+        .container {
+            display: grid;
+            /* grid-template-rows: auto auto auto auto;
+            grid-template-columns: auto auto auto; */
+
+            /* vh,=>viewport hight,  vw => viewport width */
+            grid-template-rows: 10vh 40vh 40vh 10vh ;
+            grid-template-columns: 15vw  35vw 50vw;
+
+        }
+
+        .header {
+            background-color: green;
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+
+        .left {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-color: yellow;
+        }
+
+        .right-top {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: blueviolet;
+
+
+        }
+
+        .right-buttom-left {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: aqua;
+        }
+
+        .right-buttom-right {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: rgb(222, 101, 196);
+        }
+
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: rgb(161, 90, 238);
+
+
+        }
+        ul{
+            list-style: none;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto ;
+            grid-auto-rows: auto ;
+          
+            margin: auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: azure;
+        }
+        ul :hover{
+            color: rgb(9, 245, 229);
+            cursor: pointer;
+            font-size: 20px;
+        }
+        #login :hover{
+            cursor: pointer;
+            font-size: 20px;
+        }
+        
+        li{
+            padding-top: 20px;
+        }
+        #login{
+            color: rgb(239, 251, 8);
+            display: grid;
+            grid-column-start: 39;
+            grid-column-end: 40;
+            
+        }
+
+       
+
+       
+
+    </style>
+
+</head>
+
+<body>
+
+
+   
+    </div>
+    <div class="container">
+   
+     
+        
+        <div class="header">
+          
+            <ul>
+                <img id="logo" src="logo.png" alt="">
+                <li>Home</li>
+                <li>Service</li>
+                <li>Product</li>
+                <li>blog</li>
+                <li>Contact</li>
+               <li  id="login"> Account <link rel="./html/form.html" href=""> </li>
+              
+                
+            </ul>
+           
+                            
+           
+        </div>
+        
+        <div class="left">
+            <section class="banner-wrap"  > </section>   
+                
+                            <div class="side-category">
+                                <h3>Browse By Category</h3>
+                                
+                        
+            </div>
+        </div>
+        <div class="right-top">right top</div>
+        <div class="right-buttom-left">right-buttom-left division</div>
+        <div class="right-buttom-right">right-buttom-right division</div>
+        <div class="footer">footer division</div>
+
+    </div>
+
+
+
+</body>
+
+</html>
