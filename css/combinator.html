@@ -23,9 +23,24 @@
             background-color: rgb(43, 226, 83);
 
         }
-        /* child combinatior(.child) */
+        /* child combinator */
+        .parent>div{
+            background-color: rgb(104, 10, 210);
+            color: red;
+        }
        
-      
+       /* general sibilings */
+      .grand-child1~div{
+        background-color: red;
+        color: black;
+      }
+      /* adjacent sibilings */
+      .grand-child1+div{
+        background-color: bisque;
+        color: black;
+      }
+
+
         
     </style>
 </head>
@@ -34,9 +49,9 @@
         <div class="child">child 1</div>
         <div class="child">child 2</div>
         <div class="child">child 3
-            <div class="grand-child">grand child 1</div>
-            <div class="grand-child">grand child 2</div>
-            <div class="grand-child">grand child 3</div>
+            <div class="grand-child1">grand child 1</div>
+            <div class="grand-child2">grand child 2</div>
+            <div class="grand-child2">grand child 3</div>
           
         </div>
     </div>
