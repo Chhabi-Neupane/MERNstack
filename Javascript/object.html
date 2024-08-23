@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+
+
+</head>
+<body>
+
+    <h1>object</h1>
+    <script>
+        //object
+        // {} block
+
+        /*
+        => objec is collection of key/value pair, name/value pair, property/value pair
+
+        two way of accessing object value
+        1. dot notation method
+        syntax:
+        object_name.key
+
+
+        2. bracket notation method
+        syntax:
+        object_name ['key']
+        
+        */
+        var details = {
+
+
+            name:  'ram',
+            address: 'vedu',
+            contact: '9824234234'
+            //name, address, contact => key
+            //'ram', 'vedu', '9824234234', => value 
+
+            // if type duplicste kye data will be overwrit
+           
+        }
+        // console.log (details.name, details.address, details.contact)
+        // console.log(details ['name'], details['address'], details['contact'])
+
+
+// object inside object
+
+var details = {
+            
+
+            name:  {
+                firstname: 'ram',
+                middlename: 'kumar',
+                lastname : 'shrestha',
+            },
+            address: 'vedu',
+            contact: '9824234234',
+        }
+        console.log(details.name.firstname)
+            var n = details.name;
+            console.log(n.firstname)
+
+
+            // add more data to object insite object
+
+            details['address']='lalitpur, vedu'
+            details['status']='status'
+            console.log(details)
+
+
+    </script>
+    
+</body>
+</html>
